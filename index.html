@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Explora y aprende las pseudoclases CSS con ejemplos interactivos.">
+
+    <title>CSS Pseudoclasses Explorer</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- ============================== -->
+    <!-- ENCABEZADO PRINCIPAL -->
+    <!-- ============================== -->
+
+    <header class="hero">
+
+        <nav class="navbar">
+            <h2>CSS<span>Explorer</span></h2>
+            <a href="#catalogo">Explorar</a>
+        </nav>
+
+        <div class="hero-content">
+
+            <p class="tag">GUÍA INTERACTIVA DE CSS</p>
+
+            <h1>
+                Explora todas las<br>
+                <span>pseudoclases CSS</span>
+            </h1>
+
+            <p>
+                Aprende, experimenta y domina los selectores
+                que hacen tus páginas web interactivas.
+            </p>
+
+            <a href="#catalogo" class="btn">
+                Comenzar a explorar
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ============================== -->
+    <!-- CONTENIDO PRINCIPAL -->
+    <!-- ============================== -->
+
+    <main id="catalogo">
+
+        <section class="intro">
+
+            <h2>Biblioteca de pseudoclases</h2>
+
+            <p>
+                Encuentra y aprende cada pseudoclase de CSS.
+            </p>
+
+            <input
+                type="search"
+                id="buscador"
+                placeholder="Buscar pseudoclase..."
+                aria-label="Buscar pseudoclases CSS"
+            >
+
+        </section>
+
+
+        <!-- ============================== -->
+        <!-- FILTROS DE CATEGORÍAS -->
+        <!-- ============================== -->
+
+        <section class="categories">
+
+            <button type="button" class="filter active" data-category="Todas">
+                Todas
+            </button>
+
+            <button type="button" class="filter" data-category="Interacción">
+                Interacción
+            </button>
+
+            <button type="button" class="filter" data-category="Estructura">
+                Estructura
+            </button>
+
+            <button type="button" class="filter" data-category="Formularios">
+                Formularios
+            </button>
+
+            <button type="button" class="filter" data-category="Lógicas">
+                Lógicas
+            </button>
+
+        </section>
+
+
+        <!-- ============================== -->
+        <!-- CATÁLOGO DE PSEUDOCLASES -->
+        <!-- ============================== -->
+
+        <section class="cards" id="lista">
+
+
+            <!-- PSEUDOCLASES ESTRUCTURALES -->
+
+            <article class="card" data-category="Estructura">
+                <span>ESTRUCTURA</span>
+                <h3>:nth-child()</h3>
+                <p>Selecciona un elemento según su posición entre los hijos de su padre.</p>
+                <pre><code>li:nth-child(2) {
+    color: blue;
+}</code></pre>
+            </article>
+
+            <article class="card" data-category="Estructura">
+                <span>ESTRUCTURA</span>
+                <h3>:nth-last-child()</h3>
+                <p>Selecciona un elemento contando su posición desde el último hijo.</p>
+                <pre><code>li:nth-last-child(2) {
+    color: orange;
+}</code></pre>
+            </article>
+
+            <article class="card" data-category="Estructura">
+                <span>ESTRUCTURA</span>
+                <h3>:first-of-type</h3>
+                <p>Selecciona el primer elemento de un tipo específico entre sus hermanos.</p>
+                <pre><code>p:first-of-type {
+    color: green;
+}</code></pre>
+            </article>
+
+            <article class="card" data-category="Estructura">
+                <span>ESTRUCTURA</span>
+                <h3>:last-of-type</h3>
+                <p>Selecciona el último elemento de un tipo específico entre sus hermanos.</p>
+                <pre><code>p:last-of-type {
+    color: red;
+}</code></pre>
+            </article>
+
+            <article class="card" data-category="Estructura">
+                <span>ESTRUCTURA</span>
+                <h3>:nth-of-type()</h3>
+                <p>Selecciona un elemento de un tipo específico según su posición.</p>
+                <pre><code>p:nth-of-type(2) {
+    color: blue;
+}</code></pre>
+            </article>
+
+            <article class="card" data-category="Estructura">
+                <span>ESTRUCTURA</span>
+                <h3>:only-child</h3>
+                <p>Selecciona un elemento que es el único hijo de su padre.</p>
+                <pre><code>p:only-child {
+    color: purple;
+}</code></pre>
+            </article>
+
+            <article class="card" data-category="Estructura">
+                <span>ESTRUCTURA</span>
+                <h3>:only-of-type</h3>
+                <p>Selecciona un elemento que es el único de su tipo entre sus hermanos.</p>
+                <pre><code>p:only-of-type {
+    color: orange;
+}</code></pre>
+            </article>
+
+            <article class="card" data-category="Estructura">
+                <span>ESTRUCTURA</span>
+                <h3>:empty</h3>
+                <p>Selecciona elementos que no tienen hijos ni contenido de texto.</p>
+                <pre><code>div:empty {
+    background: blue;
+}</code></pre>
+            </article>
+
+
+            <!-- PSEUDOCLASES DE INTERACCIÓN -->
+
+            <article class="card" data-category="Interacción">
+                <span>INTERACCIÓN</span>
+                <h3>:hover</h3>
+                <p>Se activa cuando el cursor pasa sobre un elemento.</p>
+                <pre><code>button:hover {
+    color: blue;
+}</code></pre>
+            </article>
+
+            <article class="card" data-category="Interacción">
+                <span>INTERACCIÓN</span>
+                <h3>:active</h3>
+                <p>Se activa mientras el usuario presiona un elemento.</p>
+                <pre><code>button:active {
+    transform: scale(.95);
+}</code></pre>
+            </article>
+
+            <article class="card" data-category="Interacción">
+                <span>INTERACCIÓN</span>
+                <h3>:focus</h3>
+                <p>Selecciona un elemento que tiene el foco.</p>
+                <pre><code>input:focus {
+    border-color: blue;
+}</code></pre>
+            </article>
+
+
+            <!-- MÁS PSEUDOCLASES ESTRUCTURALES -->
+
+            <article class="card" data-category="Estructura">
+                <span>ESTRUCTURA</span>
+                <h3>:first-child</h3>
+                <p>Selecciona el primer hijo de su elemento padre.</p>
+                <pre><code>li:first-child {
+    color: green;
+}</code></pre>
+            </article>
+
+            <article class="card" data-category="Estructura">
+                <span>ESTRUCTURA</span>
+                <h3>:last-child</h3>
+                <p>Selecciona el último hijo de su elemento padre.</p>
+                <pre><code>li:last-child {
+    color: red;
+}</code></pre>
+            </article>
+
+
+            <!-- PSEUDOCLASES DE FORMULARIOS -->
+
+            <article class="card" data-category="Formularios">
+                <span>FORMULARIOS</span>
+                <h3>:checked</h3>
+                <p>Selecciona casillas o controles seleccionados.</p>
+                <pre><code>input:checked {
+    accent-color: green;
+}</code></pre>
+            </article>
+
+            <article class="card" data-category="Formularios">
+                <span>FORMULARIOS</span>
+                <h3>:disabled</h3>
+                <p>Selecciona controles deshabilitados.</p>
+                <pre><code>input:disabled {
+    opacity: .5;
+}</code></pre>
+            </article>
+
+            <article class="card" data-category="Formularios">
+                <span>FORMULARIOS</span>
+                <h3>:enabled</h3>
+                <p>Selecciona los controles de formulario que están habilitados.</p>
+                <pre><code>input:enabled {
+    border: 2px solid green;
+}</code></pre>
+            </article>
+
+            <article class="card" data-category="Formularios">
+                <span>FORMULARIOS</span>
+                <h3>:required</h3>
+                <p>Selecciona los campos que deben completarse obligatoriamente.</p>
+                <pre><code>input:required {
+    border-color: orange;
+}</code></pre>
+            </article>
+
+            <article class="card" data-category="Formularios">
+                <span>FORMULARIOS</span>
+                <h3>:optional</h3>
+                <p>Selecciona los campos que no son obligatorios.</p>
+                <pre><code>input:optional {
+    background: #e0f2fe;
+}</code></pre>
+            </article>
+
+            <article class="card" data-category="Formularios">
+                <span>FORMULARIOS</span>
+                <h3>:valid</h3>
+                <p>Selecciona campos cuyo valor cumple las reglas de validación.</p>
+                <pre><code>input:valid {
+    border-color: green;
+}</code></pre>
+            </article>
+
+            <article class="card" data-category="Formularios">
+                <span>FORMULARIOS</span>
+                <h3>:invalid</h3>
+                <p>Selecciona campos cuyo valor no cumple las reglas de validación.</p>
+                <pre><code>input:invalid {
+    border-color: red;
+}</code></pre>
+            </article>
+
+            <article class="card" data-category="Formularios">
+                <span>FORMULARIOS</span>
+                <h3>:in-range</h3>
+                <p>Selecciona campos cuyo valor está dentro del rango permitido.</p>
+                <pre><code>input:in-range {
+    border-color: green;
+}</code></pre>
+            </article>
+
+            <article class="card" data-category="Formularios">
+                <span>FORMULARIOS</span>
+                <h3>:out-of-range</h3>
+                <p>Selecciona campos cuyo valor está fuera del rango permitido.</p>
+                <pre><code>input:out-of-range {
+    border-color: red;
+}</code></pre>
+            </article>
+
+            <article class="card" data-category="Formularios">
+                <span>FORMULARIOS</span>
+                <h3>:read-only</h3>
+                <p>Selecciona campos cuyo contenido no puede modificarse.</p>
+                <pre><code>input:read-only {
+    background: #ddd;
+}</code></pre>
+            </article>
+
+            <article class="card" data-category="Formularios">
+                <span>FORMULARIOS</span>
+                <h3>:read-write</h3>
+                <p>Selecciona campos cuyo contenido puede editarse.</p>
+                <pre><code>input:read-write {
+    background: white;
+}</code></pre>
+            </article>
+
+            <article class="card" data-category="Formularios">
+                <span>FORMULARIOS</span>
+                <h3>:placeholder-shown</h3>
+                <p>Selecciona campos que muestran el texto del placeholder.</p>
+                <pre><code>input:placeholder-shown {
+    border-color: blue;
+}</code></pre>
+            </article>
+
+            <article class="card" data-category="Formularios">
+                <span>FORMULARIOS</span>
+                <h3>:default</h3>
+                <p>Selecciona controles que están seleccionados de forma predeterminada.</p>
+                <pre><code>input:default {
+    accent-color: green;
+}</code></pre>
+            </article>
+
+            <article class="card" data-category="Formularios">
+                <span>FORMULARIOS</span>
+                <h3>:indeterminate</h3>
+                <p>Selecciona controles cuyo estado es indeterminado.</p>
+                <pre><code>input:indeterminate {
+    accent-color: orange;
+}</code></pre>
+            </article>
+
+
+            <!-- PSEUDOCLASES LÓGICAS -->
+
+            <article class="card" data-category="Lógicas">
+                <span>LÓGICAS</span>
+                <h3>:not()</h3>
+                <p>Selecciona elementos que no coinciden con un selector.</p>
+                <pre><code>p:not(.especial) {
+    color: gray;
+}</code></pre>
+            </article>
+
+            <article class="card" data-category="Lógicas">
+                <span>LÓGICAS</span>
+                <h3>:has()</h3>
+                <p>Selecciona elementos que contienen elementos coincidentes.</p>
+                <pre><code>div:has(img) {
+    border: 2px solid green;
+}</code></pre>
+            </article>
+
+        </section>
+
+
+        <!-- MENSAJE SIN RESULTADOS -->
+
+        <p class="empty" id="sinResultados" hidden>
+            No se encontraron pseudoclases.
+        </p>
+
+    </main>
+
+
+    <!-- ============================== -->
+    <!-- VENTANA MODAL -->
+    <!-- ============================== -->
+
+    <div
+        class="modal"
+        id="modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitulo"
+        aria-describedby="modalDescripcion"
+    >
+
+        <div class="modal-content">
+
+            <button
+                type="button"
+                class="close-modal"
+                id="cerrar"
+                aria-label="Cerrar ventana"
+            >
+                &times;
+            </button>
+
+            <span class="modal-category" id="modalCategoria">
+                INTERACCIÓN
+            </span>
+
+            <h2 id="modalTitulo">:hover</h2>
+
+            <p id="modalDescripcion">
+                Descripción de la pseudoclase.
+            </p>
+
+            <h3>Ejemplo de código CSS</h3>
+
+            <pre><code id="modalCodigo"></code></pre>
+
+            <h3>Prueba interactiva</h3>
+
+            <p class="demo-instruction">
+                Interactúa con el siguiente ejemplo:
+            </p>
+
+            <div class="demo-stage" id="demo"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ============================== -->
+    <!-- PIE DE PÁGINA -->
+    <!-- ============================== -->
+
+    <footer>
+        <p>CSS Explorer · Proyecto educativo de HTML y CSS</p>
+    </footer>
+
+
+    <!-- ============================== -->
+    <!-- JAVASCRIPT -->
+    <!-- ============================== -->
+
+    <script>
+
+    // ==================================
+    // DATOS DE LAS PSEUDOCLASES
+    // ==================================
+
+    const ejemplos = {
+
+        // INTERACCIÓN
+
+        hover: {
+            categoria: "INTERACCIÓN",
+            titulo: ":hover",
+            descripcion: "Se activa cuando el cursor del mouse pasa sobre un elemento. Es muy utilizada para crear efectos visuales en botones, enlaces y tarjetas.",
+            codigo: `button:hover {
+    background: green;
+    transform: scale(1.05);
+}`,
+            html: `<button type="button" class="demo-button">Pasa el cursor aquí</button>`,
+            css: `.demo-stage .demo-button:hover {
+    background: #16a34a;
+    transform: scale(1.05);
+}`
+        },
+
+        active: {
+            categoria: "INTERACCIÓN",
+            titulo: ":active",
+            descripcion: "Se activa mientras el usuario mantiene presionado un elemento. Es útil para mostrar una respuesta visual al hacer clic.",
+            codigo: `button:active {
+    transform: scale(.90);
+}`,
+            html: `<button type="button" class="demo-button">Mantén presionado</button>`,
+            css: `.demo-stage .demo-button:active {
+    transform: scale(.90);
+    background: #16a34a;
+}`
+        },
+
+        focus: {
+            categoria: "INTERACCIÓN",
+            titulo: ":focus",
+            descripcion: "Selecciona un elemento que ha recibido el foco. Puedes probarla haciendo clic en el campo o navegando con la tecla Tab.",
+            codigo: `input:focus {
+    border-color: blue;
+    outline: 2px solid blue;
+}`,
+            html: `<input class="demo-input" placeholder="Haz clic aquí">`,
+            css: `.demo-stage .demo-input:focus {
+    border-color: #60a5fa;
+    outline: 2px solid #2563eb;
+}`
+        },
+
+
+        // ESTRUCTURA
+
+        "first-child": {
+            categoria: "ESTRUCTURA",
+            titulo: ":first-child",
+            descripcion: "Selecciona un elemento cuando es el primer hijo de su elemento padre.",
+            codigo: `li:first-child {
+    color: green;
+}`,
+            html: `<div class="demo-list">
+    <span>Primer elemento</span>
+    <span>Segundo elemento</span>
+    <span>Tercer elemento</span>
+</div>`,
+            css: `.demo-stage .demo-list span:first-child {
+    background: #166534;
+    color: white;
+}`
+        },
+
+        "last-child": {
+            categoria: "ESTRUCTURA",
+            titulo: ":last-child",
+            descripcion: "Selecciona un elemento cuando es el último hijo de su elemento padre.",
+            codigo: `li:last-child {
+    color: red;
+}`,
+            html: `<div class="demo-list">
+    <span>Primer elemento</span>
+    <span>Segundo elemento</span>
+    <span>Último elemento</span>
+</div>`,
+            css: `.demo-stage .demo-list span:last-child {
+    background: #991b1b;
+    color: white;
+}`
+        },
+
+        "nth-child": {
+            categoria: "ESTRUCTURA",
+            titulo: ":nth-child()",
+            descripcion: "Selecciona un elemento según su posición entre todos los hijos de su padre.",
+            codigo: `li:nth-child(2) {
+    color: blue;
+}`,
+            html: `<div class="demo-list">
+    <span>Primer elemento</span>
+    <span>Segundo elemento</span>
+    <span>Tercer elemento</span>
+    <span>Cuarto elemento</span>
+</div>`,
+            css: `.demo-stage .demo-list span:nth-child(2) {
+    background: #2563eb;
+    color: white;
+}`
+        },
+
+        "nth-last-child": {
+            categoria: "ESTRUCTURA",
+            titulo: ":nth-last-child()",
+            descripcion: "Selecciona un elemento contando su posición desde el último hijo.",
+            codigo: `li:nth-last-child(2) {
+    color: orange;
+}`,
+            html: `<div class="demo-list">
+    <span>Primer elemento</span>
+    <span>Segundo elemento</span>
+    <span>Tercer elemento</span>
+    <span>Cuarto elemento</span>
+</div>`,
+            css: `.demo-stage .demo-list span:nth-last-child(2) {
+    background: #b45309;
+    color: white;
+}`
+        },
+
+        "first-of-type": {
+            categoria: "ESTRUCTURA",
+            titulo: ":first-of-type",
+            descripcion: "Selecciona el primer elemento de un tipo específico entre sus hermanos.",
+            codigo: `p:first-of-type {
+    color: green;
+}`,
+            html: `<div class="demo-list">
+    <h4>Un título</h4>
+    <p>Primer párrafo</p>
+    <span>Un texto</span>
+    <p>Segundo párrafo</p>
+</div>`,
+            css: `.demo-stage .demo-list p:first-of-type {
+    background: #166534;
+    color: white;
+}`
+        },
+
+        "last-of-type": {
+            categoria: "ESTRUCTURA",
+            titulo: ":last-of-type",
+            descripcion: "Selecciona el último elemento de un tipo específico entre sus hermanos.",
+            codigo: `p:last-of-type {
+    color: red;
+}`,
+            html: `<div class="demo-list">
+    <p>Primer párrafo</p>
+    <span>Un texto</span>
+    <p>Segundo párrafo</p>
+    <h4>Un título final</h4>
+</div>`,
+            css: `.demo-stage .demo-list p:last-of-type {
+    background: #991b1b;
+    color: white;
+}`
+        },
+
+        "nth-of-type": {
+            categoria: "ESTRUCTURA",
+            titulo: ":nth-of-type()",
+            descripcion: "Selecciona un elemento según su posición entre los elementos del mismo tipo.",
+            codigo: `p:nth-of-type(2) {
+    color: blue;
+}`,
+            html: `<div class="demo-list">
+    <h4>Un título</h4>
+    <p>Primer párrafo</p>
+    <span>Un texto</span>
+    <p>Segundo párrafo</p>
+    <p>Tercer párrafo</p>
+</div>`,
+            css: `.demo-stage .demo-list p:nth-of-type(2) {
+    background: #2563eb;
+    color: white;
+}`
+        },
+
+        "only-child": {
+            categoria: "ESTRUCTURA",
+            titulo: ":only-child",
+            descripcion: "Selecciona un elemento cuando es el único hijo de su elemento padre.",
+            codigo: `p:only-child {
+    color: purple;
+}`,
+            html: `<div class="demo-list">
+    <p>Este es el único hijo</p>
+</div>
+<div class="demo-list">
+    <p>Primer hijo</p>
+    <p>Segundo hijo</p>
+</div>`,
+            css: `.demo-stage .demo-list p:only-child {
+    background: #7e22ce;
+    color: white;
+}`
+        },
+
+        "only-of-type": {
+            categoria: "ESTRUCTURA",
+            titulo: ":only-of-type",
+            descripcion: "Selecciona un elemento cuando es el único de su tipo entre sus hermanos.",
+            codigo: `p:only-of-type {
+    color: orange;
+}`,
+            html: `<div class="demo-list">
+    <h4>Un título</h4>
+    <p>Único párrafo</p>
+    <span>Un texto</span>
+</div>`,
+            css: `.demo-stage .demo-list p:only-of-type {
+    background: #b45309;
+    color: white;
+}`
+        },
+
+        empty: {
+            categoria: "ESTRUCTURA",
+            titulo: ":empty",
+            descripcion: "Selecciona elementos que no tienen hijos ni nodos de texto.",
+            codigo: `div:empty {
+    background: blue;
+}`,
+            html: `<div class="empty-demo"></div>`,
+            css: `.demo-stage .empty-demo:empty {
+    width: 180px;
+    height: 70px;
+    background: #2563eb;
+    border: 2px solid #60a5fa;
+    border-radius: 8px;
+}`
+        },
+
+
+        // FORMULARIOS
+
+        checked: {
+            categoria: "FORMULARIOS",
+            titulo: ":checked",
+            descripcion: "Selecciona controles de formulario que están marcados, como los checkbox y radio buttons.",
+            codigo: `input:checked {
+    accent-color: green;
+}`,
+            html: `<label class="demo-check">
+    <input type="checkbox">
+    Marca esta casilla
+</label>`,
+            css: `.demo-stage input:checked {
+    accent-color: #22c55e;
+}`
+        },
+
+        disabled: {
+            categoria: "FORMULARIOS",
+            titulo: ":disabled",
+            descripcion: "Selecciona los elementos de formulario que están deshabilitados y no pueden ser utilizados por el usuario.",
+            codigo: `input:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}`,
+            html: `<input class="demo-input" disabled value="Campo deshabilitado">`,
+            css: `.demo-stage .demo-input:disabled {
+    opacity: .4;
+    cursor: not-allowed;
+}`
+        },
+
+        enabled: {
+            categoria: "FORMULARIOS",
+            titulo: ":enabled",
+            descripcion: "Selecciona los controles de formulario que están habilitados y pueden utilizarse.",
+            codigo: `input:enabled {
+    border: 2px solid green;
+}`,
+            html: `<div class="demo-list">
+    <input class="demo-input" placeholder="Campo habilitado">
+    <input class="demo-input" disabled value="Campo deshabilitado">
+</div>`,
+            css: `.demo-stage input:enabled {
+    border: 2px solid #22c55e;
+}`
+        },
+
+        required: {
+            categoria: "FORMULARIOS",
+            titulo: ":required",
+            descripcion: "Selecciona los campos que tienen el atributo required y deben completarse.",
+            codigo: `input:required {
+    border: 2px solid orange;
+}`,
+            html: `<input class="demo-input" required placeholder="Campo obligatorio">`,
+            css: `.demo-stage input:required {
+    border: 2px solid #f59e0b;
+}`
+        },
+
+        optional: {
+            categoria: "FORMULARIOS",
+            titulo: ":optional",
+            descripcion: "Selecciona los campos que no tienen el atributo required.",
+            codigo: `input:optional {
+    border: 2px solid blue;
+}`,
+            html: `<div class="demo-list">
+    <input class="demo-input" placeholder="Campo opcional">
+    <input class="demo-input" required placeholder="Campo obligatorio">
+</div>`,
+            css: `.demo-stage input:optional {
+    border: 2px solid #3b82f6;
+}`
+        },
+
+        valid: {
+            categoria: "FORMULARIOS",
+            titulo: ":valid",
+            descripcion: "Selecciona los campos cuyo contenido cumple las reglas de validación.",
+            codigo: `input:valid {
+    border-color: green;
+}`,
+            html: `<input class="demo-input" type="email" required value="correo@ejemplo.com">`,
+            css: `.demo-stage input:valid {
+    border: 2px solid #22c55e;
+}`
+        },
+
+        invalid: {
+            categoria: "FORMULARIOS",
+            titulo: ":invalid",
+            descripcion: "Selecciona los campos cuyo contenido no cumple las reglas de validación.",
+            codigo: `input:invalid {
+    border-color: red;
+}`,
+            html: `<input class="demo-input" type="email" required value="correo incorrecto">`,
+            css: `.demo-stage input:invalid {
+    border: 2px solid #ef4444;
+}`
+        },
+
+        "in-range": {
+            categoria: "FORMULARIOS",
+            titulo: ":in-range",
+            descripcion: "Selecciona campos numéricos cuyo valor está dentro del mínimo y máximo establecidos.",
+            codigo: `input:in-range {
+    border-color: green;
+}`,
+            html: `<input class="demo-input" type="number" min="1" max="10" value="5">`,
+            css: `.demo-stage input:in-range {
+    border: 2px solid #22c55e;
+}`
+        },
+
+        "out-of-range": {
+            categoria: "FORMULARIOS",
+            titulo: ":out-of-range",
+            descripcion: "Selecciona campos numéricos cuyo valor está fuera del rango permitido.",
+            codigo: `input:out-of-range {
+    border-color: red;
+}`,
+            html: `<input class="demo-input" type="number" min="1" max="10" value="15">`,
+            css: `.demo-stage input:out-of-range {
+    border: 2px solid #ef4444;
+}`
+        },
+
+        "read-only": {
+            categoria: "FORMULARIOS",
+            titulo: ":read-only",
+            descripcion: "Selecciona campos cuyo contenido no puede ser editado por el usuario.",
+            codigo: `input:read-only {
+    background: #ddd;
+}`,
+            html: `<div class="demo-list">
+    <input class="demo-input" readonly value="Solo lectura">
+    <input class="demo-input" value="Puedes editarme">
+</div>`,
+            css: `.demo-stage input:read-only {
+    background: #334155;
+    color: white;
+}`
+        },
+
+        "read-write": {
+            categoria: "FORMULARIOS",
+            titulo: ":read-write",
+            descripcion: "Selecciona campos cuyo contenido puede ser modificado por el usuario.",
+            codigo: `input:read-write {
+    background: white;
+}`,
+            html: `<input class="demo-input" placeholder="Escribe algo aquí">`,
+            css: `.demo-stage input:read-write {
+    border: 2px solid #3b82f6;
+}`
+        },
+
+        "placeholder-shown": {
+            categoria: "FORMULARIOS",
+            titulo: ":placeholder-shown",
+            descripcion: "Selecciona campos que están mostrando actualmente el texto de su placeholder.",
+            codigo: `input:placeholder-shown {
+    border-color: blue;
+}`,
+            html: `<input class="demo-input" placeholder="Escribe para probar">`,
+            css: `.demo-stage input:placeholder-shown {
+    border: 2px solid #3b82f6;
+}`
+        },
+
+        default: {
+            categoria: "FORMULARIOS",
+            titulo: ":default",
+            descripcion: "Selecciona controles que están seleccionados de forma predeterminada.",
+            codigo: `input:default {
+    accent-color: green;
+}`,
+            html: `<div class="demo-list">
+    <label><input type="radio" name="opcion" checked> Opción predeterminada</label>
+    <label><input type="radio" name="opcion"> Otra opción</label>
+</div>`,
+            css: `.demo-stage input:default {
+    accent-color: #22c55e;
+}`
+        },
+
+        indeterminate: {
+            categoria: "FORMULARIOS",
+            titulo: ":indeterminate",
+            descripcion: "Selecciona controles que se encuentran en un estado indeterminado.",
+            codigo: `input:indeterminate {
+    accent-color: orange;
+}`,
+            html: `<label class="demo-check">
+    <input type="checkbox" id="check-indeterminado">
+    Estado indeterminado
+</label>`,
+            css: `.demo-stage input:indeterminate {
+    outline: 3px solid #f59e0b;
+}`
+        },
+
+
+        // PSEUDOCLASES LÓGICAS
+
+        not: {
+            categoria: "LÓGICAS",
+            titulo: ":not()",
+            descripcion: "Permite seleccionar los elementos que NO coinciden con el selector indicado dentro de los paréntesis.",
+            codigo: `p:not(.especial) {
+    color: gray;
+}`,
+            html: `<div class="demo-list">
+    <span class="especial">Elemento especial</span>
+    <span>Elemento normal</span>
+    <span>Otro elemento normal</span>
+</div>`,
+            css: `.demo-stage .demo-list span:not(.especial) {
+    background: #2563eb;
+    color: white;
+}`
+        },
+
+        has: {
+            categoria: "LÓGICAS",
+            titulo: ":has()",
+            descripcion: "Permite seleccionar un elemento padre cuando contiene otro elemento que coincide con el selector indicado.",
+            codigo: `div:has(img) {
+    border: 2px solid green;
+}`,
+            html: `
+                <div class="demo-card">
+                    <h4>Tarjeta con imagen</h4>
+                    <img src="https://placehold.co/100x70/2563eb/ffffff?text=Imagen" alt="Imagen de ejemplo">
+                    <p>Esta tarjeta contiene una imagen.</p>
+                </div>
+
+                <div class="demo-card">
+                    <h4>Tarjeta sin imagen</h4>
+
+                    <p>Esta tarjeta no contiene ninguna imagen.</p>
+                </div>
+            `,
+            css: `
+                .demo-stage .demo-card:has(img) {
+                    border: 2px solid #22c55e;
+                }
+
+                .demo-stage .demo-card img {
+                    width: 100px;
+                    height: 70px;
+                    object-fit: cover;
+                    border-radius: 6px;
+                    display: block;
+                    margin: 12px 0;
+                }
+                    
+                .demo-card {
+                    padding: 15px;
+                    border: 2px solid #334155;
+                    border-radius: 10px;
+                    background: #151e33;
+                    margin-bottom: 12px;
+                }
+
+                .demo-card:has(img) {
+                    border: 2px solid #22c55e;
+                    background: #142b29;
+                }
+
+                .demo-card img {
+                    display: block;
+                    width: 100px;
+                    height: 70px;
+                    margin: 10px 0;
+                    border-radius: 6px;
+                }
+            `
+        }
+
+    };
+
+
+    // ==================================
+    // CREAR BOTONES VER MÁS
+    // ==================================
+
+    const tarjetas = document.querySelectorAll(".card");
+
+    tarjetas.forEach(tarjeta => {
+
+        const titulo = tarjeta.querySelector("h3")
+            .textContent.trim();
+
+        const clave = titulo
+            .replace(/^:/, "")
+            .replace(/\(\)$/, "");
+
+        const boton = document.createElement("button");
+
+        boton.type = "button";
+        boton.textContent = "Ver más →";
+        boton.className = "btn-more";
+        boton.dataset.example = clave;
+
+        tarjeta.appendChild(boton);
+
+    });
+
+
+    // ==================================
+    // ELEMENTOS DEL MODAL
+    // ==================================
+
+    const modal = document.getElementById("modal");
+    const cerrar = document.getElementById("cerrar");
+
+    const modalTitulo = document.getElementById("modalTitulo");
+    const modalCategoria = document.getElementById("modalCategoria");
+    const modalDescripcion = document.getElementById("modalDescripcion");
+    const modalCodigo = document.getElementById("modalCodigo");
+    const demo = document.getElementById("demo");
+
+
+    // ==================================
+    // ABRIR MODAL
+    // ==================================
+
+    tarjetas.forEach(tarjeta => {
+
+        tarjeta.querySelector(".btn-more")
+            .addEventListener("click", () => {
+
+                const boton = tarjeta.querySelector(".btn-more");
+                const clave = boton.dataset.example;
+
+                const ejemplo = ejemplos[clave];
+
+                if (!ejemplo) {
+                    console.warn("No se encontró el ejemplo:", clave);
+                    return;
+                }
+
+                modalTitulo.textContent = ejemplo.titulo;
+                modalCategoria.textContent = ejemplo.categoria;
+                modalDescripcion.textContent = ejemplo.descripcion;
+                modalCodigo.textContent = ejemplo.codigo;
+
+                // Insertar el HTML de la demostración
+                demo.innerHTML = ejemplo.html;
+
+                // Activar el estado indeterminado
+                if (clave === "indeterminate") {
+
+                    const casilla = demo.querySelector("#check-indeterminado");
+
+                    if (casilla) {
+                        casilla.indeterminate = true;
+                    }
+
+                }
+
+                // Eliminar los estilos de la demostración anterior
+                const estiloAnterior = document.getElementById("demo-styles");
+
+                if (estiloAnterior) {
+                    estiloAnterior.remove();
+                }
+
+                // Aplicar los nuevos estilos
+                const nuevoEstilo = document.createElement("style");
+
+                nuevoEstilo.id = "demo-styles";
+                nuevoEstilo.textContent = ejemplo.css;
+
+                document.head.appendChild(nuevoEstilo);
+
+                // Mostrar modal
+                modal.classList.add("show");
+
+                document.body.style.overflow = "hidden";
+
+                cerrar.focus();
+
+            });
+
+    });
+
+
+    // ==================================
+    // CERRAR MODAL
+    // ==================================
+
+    function cerrarModal() {
+
+        modal.classList.remove("show");
+
+        document.body.style.overflow = "";
+
+    }
+
+    cerrar.addEventListener("click", cerrarModal);
+
+
+    // Cerrar al hacer clic fuera del contenido
+
+    modal.addEventListener("click", (evento) => {
+
+        if (evento.target === modal) {
+            cerrarModal();
+        }
+
+    });
+
+
+    // Cerrar con la tecla Escape
+
+    document.addEventListener("keydown", (evento) => {
+
+        if (
+            evento.key === "Escape" &&
+            modal.classList.contains("show")
+        ) {
+            cerrarModal();
+        }
+
+    });
+
+
+    // ==================================
+    // BUSCADOR Y FILTROS
+    // ==================================
+
+    const buscador = document.getElementById("buscador");
+
+    const filtros = document.querySelectorAll(".filter");
+
+    const sinResultados = document.getElementById("sinResultados");
+
+    let categoriaActual = "Todas";
+
+
+    function filtrar() {
+
+        const texto = buscador.value.toLowerCase().trim();
+
+        let visibles = 0;
+
+        tarjetas.forEach(tarjeta => {
+
+            const coincideTexto =
+                tarjeta.textContent.toLowerCase().includes(texto);
+
+            const coincideCategoria =
+                categoriaActual === "Todas" ||
+                tarjeta.dataset.category === categoriaActual;
+
+            const mostrar = coincideTexto && coincideCategoria;
+
+            tarjeta.hidden = !mostrar;
+
+            if (mostrar) {
+                visibles++;
+            }
+
+        });
+
+        sinResultados.hidden = visibles > 0;
+
+    }
+
+
+    // Buscar mientras se escribe
+
+    buscador.addEventListener("input", filtrar);
+
+
+    // Filtrar por categoría
+
+    filtros.forEach(boton => {
+
+        boton.addEventListener("click", () => {
+
+            filtros.forEach(filtro => {
+                filtro.classList.remove("active");
+            });
+
+            boton.classList.add("active");
+
+            categoriaActual = boton.dataset.category;
+
+            filtrar();
+
+        });
+
+    });
+
+
+    // Mostrar todas las tarjetas al iniciar
+
+    filtrar();
+
+    </script>
+
+</body>
+</html>
